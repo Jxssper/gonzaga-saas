@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo Gonzaga | ERP, RA y tótems para tu empresa</title>
+<meta name="description" content="Software a medida: ERP, realidad aumentada y tótems interactivos para digitalizar tu negocio.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="header__logo">Gonzaga</a>
+    <nav class="header__nav" id="nav">
+      <a href="#producto">Producto</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#contacto" class="btn btn--primary header__cta">Solicitar demo</a>
+    <button class="header__burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-overlay" id="navOverlay"></div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow" data-reveal>Software para empresas</p>
+        <h1 class="hero__title" data-reveal>El ERP, la realidad aumentada y los tótems que tu operación necesita</h1>
+        <p class="hero__desc" data-reveal>Digitalizamos procesos reales en textil, cuero, agroindustria y turismo. Un solo equipo, del diagnóstico a la implementación.</p>
+        <div class="hero__actions" data-reveal>
+          <a href="#contacto" class="btn btn--primary">Solicitar demo</a>
+          <a href="#producto" class="btn btn--outline">Ver producto</a>
+        </div>
+        <div class="hero__stats" data-reveal>
+          <div><strong data-count="15">0</strong><span>Proyectos entregados</span></div>
+          <div><strong data-count="4">0</strong><span>Sectores atendidos</span></div>
+          <div><strong data-count="10">0</strong><span>Años de experiencia</span></div>
+        </div>
+      </div>
+      <div class="hero__panel" data-reveal>
+        <div class="panel-card">
+          <div class="panel-card__head">
+            <span>Panel de operación</span>
+            <span class="panel-dot"></span>
+          </div>
+          <canvas id="heroChart" height="160"></canvas>
+          <div class="panel-metrics">
+            <div><span>Órdenes hoy</span><strong>128</strong></div>
+            <div><span>Eficiencia</span><strong>94%</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands" id="clientes">
+    <p class="brands__label container">Empresas que confían en nosotros</p>
+    <div class="brands__track">
+      <div class="brands__group">
+        <span>Nativa</span><span>Kuskalla</span><span>Continental</span><span>WAW</span>
+        <span>Alpacaterra</span><span>Ayllu</span><span>Monasterio</span><span>LUX</span>
+      </div>
+      <div class="brands__group" aria-hidden="true">
+        <span>Nativa</span><span>Kuskalla</span><span>Continental</span><span>WAW</span>
+        <span>Alpacaterra</span><span>Ayllu</span><span>Monasterio</span><span>LUX</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="bento" id="producto">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Producto</p>
+      <h2 class="section-title" data-reveal>Todo tu negocio, en un solo lugar</h2>
+      <div class="bento__grid">
+        <div class="bento__item bento__item--wide" data-reveal>
+          <h3>ERP a medida</h3>
+          <p>Inventario, ventas, producción y finanzas conectados en tiempo real, sin hojas de cálculo sueltas.</p>
+          <div class="bento__bars">
+            <span style="height:35%"></span><span style="height:60%"></span><span style="height:45%"></span>
+            <span style="height:80%"></span><span style="height:55%"></span><span style="height:70%"></span>
+          </div>
+        </div>
+        <div class="bento__item" data-reveal>
+          <h3>Realidad aumentada</h3>
+          <p>Espejos probadores, menús y accesorios interactivos que elevan la experiencia del cliente.</p>
+        </div>
+        <div class="bento__item" data-reveal>
+          <h3>Tótems interactivos</h3>
+          <p>Puntos de autoservicio y consulta para tiendas, eventos y espacios comerciales.</p>
+        </div>
+        <div class="bento__item" data-reveal>
+          <h3>Marketing digital</h3>
+          <p>Estrategia y contenido para captar y fidelizar clientes en canales digitales.</p>
+        </div>
+        <div class="bento__item" data-reveal>
+          <h3>Transformación digital</h3>
+          <p>Acompañamiento completo del diagnóstico a la adopción, con tu equipo capacitado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="compare">
+    <div class="container compare__inner">
+      <div class="compare__col" data-reveal>
+        <p class="compare__label">Antes</p>
+        <ul>
+          <li>Excel y cuadernos para controlar inventario</li>
+          <li>Reportes armados a mano cada fin de mes</li>
+          <li>Decisiones basadas en intuición</li>
+          <li>Procesos que dependen de una sola persona</li>
+        </ul>
+      </div>
+      <div class="compare__arrow" aria-hidden="true">→</div>
+      <div class="compare__col compare__col--accent" data-reveal>
+        <p class="compare__label">Con Gonzaga</p>
+        <ul>
+          <li>Inventario y ventas sincronizados en vivo</li>
+          <li>Reportes automáticos, siempre al día</li>
+          <li>Decisiones basadas en datos reales</li>
+          <li>Procesos documentados y escalables</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Servicios</p>
+      <h2 class="section-title" data-reveal>Cómo trabajamos contigo</h2>
+      <div class="services__grid">
+        <div class="step" data-reveal><span class="step__num">01</span><h3>Diagnóstico</h3><p>Mapeamos tus procesos actuales y detectamos cuellos de botella reales.</p></div>
+        <div class="step" data-reveal><span class="step__num">02</span><h3>Diseño</h3><p>Definimos el sistema, integraciones y experiencia a medida de tu operación.</p></div>
+        <div class="step" data-reveal><span class="step__num">03</span><h3>Implementación</h3><p>Desarrollamos, probamos y desplegamos con tu equipo acompañando cada paso.</p></div>
+        <div class="step" data-reveal><span class="step__num">04</span><h3>Soporte</h3><p>Seguimos contigo después del lanzamiento, con mejoras continuas.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final" id="contacto">
+    <div class="container cta-final__inner">
+      <h2 data-reveal>¿Listo para digitalizar tu operación?</h2>
+      <p data-reveal>Conversemos sobre tu proyecto, sin compromiso.</p>
+      <a href="mailto:info@gonzaga.pe" class="btn btn--primary" data-reveal>info@gonzaga.pe</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <p class="footer__logo">Gonzaga</p>
+      <p>Grupo Gonzaga © 2026. Todos los derechos reservados.</p>
+    </div>
+    <div>
+      <h4>Producto</h4>
+      <a href="#producto">ERP</a>
+      <a href="#producto">Realidad aumentada</a>
+      <a href="#producto">Tótems</a>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <a href="mailto:info@gonzaga.pe">info@gonzaga.pe</a>
+      <a href="tel:+51932533500">932 533 500</a>
+      <a href="https://www.instagram.com/gonzaga_proyectos/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/51932533500?text=Hola%2C%20quiero%20más%20información" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.23.62 4.32 1.7 6.1L4 29l8.06-1.66a11.94 11.94 0 0 0 3.96.68C22.6 28.02 28 22.62 28 16.02 28 9.4 22.6 3 16.02 3zm0 21.6c-1.32 0-2.6-.28-3.78-.83l-.27-.13-4.78.99.98-4.67-.17-.28a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.46-9.44 5.2 0 9.44 4.24 9.44 9.44 0 5.2-4.24 9.44-9.44 9.44zm5.2-7.06c-.28-.14-1.68-.83-1.94-.92-.26-.1-.45-.14-.64.14-.19.28-.74.92-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.4-.84-.75-1.4-1.67-1.57-1.95-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.14-.64-1.55-.88-2.13-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.35-.26.28-1 .98-1 2.39s1.02 2.77 1.17 2.96c.14.19 2 3.05 4.84 4.28.68.29 1.2.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.68-.68 1.92-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.55-.33z"/></svg>
+</a>
+<button class="totop-btn" id="totop" aria-label="Subir arriba">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
